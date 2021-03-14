@@ -9,11 +9,11 @@ for i in range(len(string)):
         abc[string[i+1]] += 1
 maxi = 0
 maxistr = ""
+
 for i in abc:
     if int(abc.get(i)) > maxi:
         maxi = abc.get(i)
         maxistr = i
-    # print(abc.get(i))
-
+        
 print(maxi)
 print(maxistr)
